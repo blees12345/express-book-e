@@ -29,6 +29,8 @@ app.get('/', (req, res) => {
 // 	res.json({greeting:'hello world'});
 // });
 /* START CONTROLLERS HERE */
+const bookmarksController = require('./controllers/bookmarksController');
+app.use('/api/bookmarks', bookmarksController)
 /* END CONTROLLERS HERE */
 
 //=============================================================================
